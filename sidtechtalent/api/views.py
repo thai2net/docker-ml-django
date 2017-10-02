@@ -9,3 +9,5 @@ class Hello(APIView):
     def get(self, request):
         return Response({"hello": "world"})
     
+
+# your ml class here

@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+
+# class Hello is in "api/views.py" so we've to import here
 from api import views as apiViews
 
 urlpatterns = [
     url(r'^api/hello', apiViews.Hello.as_view(), name="hello"),
+    # your path to api here
+    # ... 
+    # ...
     url(r'^admin/', admin.site.urls),
 ]
